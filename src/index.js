@@ -12,7 +12,7 @@ root.render(
       <Routes>
         <Route path="/*" element={<App />} />
       </Routes>
-    </Router>walalal
+    </Router>
     
   </React.StrictMode>
 );
