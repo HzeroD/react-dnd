@@ -1,3 +1,7 @@
+body {
+  padding: 11px;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +9,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +19,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #90afed;
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.nav-links {
+  margin: auto 10px;
 }
 
 .App-link {
