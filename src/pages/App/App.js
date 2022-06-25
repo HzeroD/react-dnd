@@ -4,7 +4,11 @@ import React, { useState } from "react"
 import NavBar from '../../components/NavBar/NavBar'
 import { Routes, Route } from 'react-router-dom'
 
-import ClassList from '../../components/ClassList/ClassList'
+import ClassList from '../ClassList/ClassList'
+import MonsterList from '../MonsterList/MonsterList'
+import ClassDetails from '../ClassDetails/ClassDetails'
+import MonsterDetails from '../MonsterDetails/MonsterDetails'
+import SpellSearch from "../SpellSearch/SpellSearch"
 
 
 function App() {
@@ -19,6 +23,10 @@ function App() {
       <NavBar navItems={navItems} />
       <Routes>
         <Route path='/class-list' element={<ClassList />} />
+        <Route path='/class' element={<ClassDetails />} />
+        <Route path='/monster-list' element={<MonsterList />} />
+        <Route path='/monster' element={<MonsterDetails />} />
+        <Route path='/spell-search' element={<SpellSearch />} />
       </Routes>
     </>
   )

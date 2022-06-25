@@ -12,6 +12,15 @@ body {
   border-radius: 50%;
 }
 
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: clamp(400px, 80vw, 1200px);
+  margin: auto;
+  justify-content: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
